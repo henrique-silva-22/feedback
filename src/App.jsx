@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components"
 
 import {theme} from "./styles/theme.js"
 import {Home} from "./pages/Home"
-import {Globalstyle} from "./styles/global.js"
+import {GlobalStyle} from "./styles/global.js"
 
 const router = createBrowserRouter([
   {
@@ -16,7 +16,7 @@ export function App() {
   return (
     <ThemeProvider theme={theme}> 
           <RouterProvider router={router} />
-          <Globalstyle />
+          <GlobalStyle />
     </ThemeProvider>
   )
 }
